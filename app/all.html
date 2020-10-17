@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <title>Project#1</title>
+  <meta name="description" content="Project#1">
+  <link rel="icon" href="images/favicon.png">
+  <meta property="og:image" content="images/logo.png">
+  <link rel="stylesheet" href="css/app.min.css">
+  <style>
+    h2 {
+      font-size: 48px;
+      line-height: 56px;
+      margin-bottom: 35px;
+      color: #111111;
+    }
+
+    hr {
+      border-bottom: 1px solid #111111;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="example" class="modal">
+    <div class="modal__window">
+      <span class="modal__close" data-dismiss="modal">×</span>
+      <h3>Ваш шедевр готов!</h3>
+      <p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные
+        задания по разработке направлений прогрессивного развития. Идейные соображения высшего порядка, а также
+        реализация намеченных плановых заданий в значительной степени обуславливает создание форм развития. Товарищи!
+        укрепление и развитие структуры в значительной степени обуславливает создание новых предложений. Равным образом
+        дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание существенных
+        финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности
+        обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении
+        поставленных задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей
+        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.</p>
+      <p>Значимость этих проблем настолько очевидна, что рамки и место обучения кадров играет важную роль в формировании
+        существенных финансовых и административных условий. Не следует, однако забывать, что постоянный количественный
+        рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное
+        информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание
+        дальнейших направлений развития.</p>
+      <p>Не следует, однако забывать, что реализация намеченных плановых заданий представляет собой интересный
+        эксперимент проверки направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что
+        постоянный количественный рост и сфера нашей активности способствует подготовки и реализации форм развития.</p>
+    </div>
+  </div>
+  <div id="example1" class="modal">
+    <div class="modal__window">
+      <span class="modal__close" data-dismiss="modal">×</span>
+      <h3>Ваш шедевр готов!!!!!</h3>
+      <p>Разнообразный и богатый опыт начало повседневной работы по формированию позиции позволяет выполнять важные
+        задания по разработке направлений прогрессивного развития. Идейные соображения высшего порядка, а также
+        реализация намеченных плановых заданий в значительной степени обуславливает создание форм развития. Товарищи!
+        укрепление и развитие структуры в значительной степени обуславливает создание новых предложений. Равным образом
+        дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание существенных
+        финансовых и административных условий. С другой стороны дальнейшее развитие различных форм деятельности
+        обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении
+        поставленных задач. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей
+        активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям.</p>
+      <p>Значимость этих проблем настолько очевидна, что рамки и место обучения кадров играет важную роль в формировании
+        существенных финансовых и административных условий. Не следует, однако забывать, что постоянный количественный
+        рост и сфера нашей активности играет важную роль в формировании новых предложений. Таким образом постоянное
+        информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание
+        дальнейших направлений развития.</p>
+      <p>Не следует, однако забывать, что реализация намеченных плановых заданий представляет собой интересный
+        эксперимент проверки направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что
+        постоянный количественный рост и сфера нашей активности способствует подготовки и реализации форм развития.</p>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <div class="container">
+
+      <h2>Гамбургер</h2>
+
+      <div class="humburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <hr>
+
+      <h2>Модальные окна</h2>
+
+      <button class="modal__btn btn" data-target="example" data-toggle="modal">Кнопка</button>
+      <a href="" class="modal__btn btn" data-target="example1" data-toggle="modal">Ссылка</a>
+
+      <hr>
+
+      <div class="form">
+        <form class="form__body" id="form">
+          <h2 class="form__title">Отправка данных на почту</h2>
+
+          <div class="form__item">
+            <label class="form__label" for="formName">Имя*:</label>
+            <input class="form__input __req" id="formName" type="text" name="name">
+          </div>
+
+          <div class="form__item">
+            <label class="form__label" for="formEmail">E-mail*:</label>
+            <input class="form__input __req __email" id="formEmail" type="text" name="email">
+          </div>
+
+          <div class="form__item">
+            <label class="form__label" for="formPhone">Телефон*:</label>
+            <input class="form__input __req __phone" id="formPhone" type="text" value="+7(___)___-____" name="phone">
+          </div>
+
+          <div class="form__item">
+            <div class="form__label">Радио кнопки</div>
+            <div class="form__options">
+              <div class="form__options_item">
+                <input class="form__options_input" id="formOptions" type="radio" name="options" value="one" checked>
+                <label class="form__options_label" for="formOptions">
+                  <span>Кнопка*:</span></label>
+              </div>
+            </div>
+            <div class="form__options">
+              <div class="form__options_item">
+                <input class="form__options_input" id="formOptions1" type="radio" name="options" value="two">
+                <label class="form__options_label" for="formOptions1">
+                  <span>Кнопка1*:</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form__item">
+            <div class="form__label">Селект:</div>
+            <div class="form__item_select_wrapper">
+              <select name="select" class="form__item_select">
+                <option value="Селект 1" selected>Селект 1</option>
+                <option value="Селект 2">Селект 2</option>
+                <option value="Селект 3">Селект 3</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form__item">
+            <label class="form__label" for="formMessage">Сообщение*:</label>
+            <textarea class="form__input" id="formMessage" name="message"></textarea>
+          </div>
+          <div class="form__item">
+            <div class="form__label">Прикрепить фото</div>
+            <div class="form__file">
+              <div class="form__file_item">
+                <input class="form__file_input" id="formImage" type="file" name="image" accept=".jpg, .png, .gif">
+                <div class="form__file_button">Выбрать</div>
+              </div>
+              <div id="formPreview" class="form__file_preview"></div>
+            </div>
+          </div>
+
+          <div class="form__item">
+            <div class="form__checkbox">
+              <input class="form__checkbox_input __req" id="formAgreement" type="checkbox" name="agreement" checked>
+              <label class="form__checkbox_label" for="formAgreement">
+                <span>Я даю свое согласие на обработку персональных данных в соответсвтие с <a
+                    href="/">Условиями</a>*</span></label>
+            </div>
+          </div>
+
+          <button class="form__button btn" type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <hr>
+
+      <h2>Слайдер</h2>
+
+      <div class="slider" id="slider">
+        <div class="slider__wrapper">
+          <div class="slider__items">
+            <div class="slider__item">
+              <div style="width: 100%;height: 200px;background: rgb(14, 212, 40);"></div>
+            </div>
+            <div class="slider__item">
+              <div style="width: 100%;height: 200px;background: rgb(192, 64, 64);"></div>
+            </div>
+            <div class="slider__item">
+              <div style="width: 100%;height: 200px;background: rgb(67, 18, 182);"></div>
+            </div>
+          </div>
+        </div>
+        <a class="slider__control slider__control_prev" href="#" role="button"></a>
+        <a class="slider__control slider__control_next slider__control_show" href="#" role="button"></a>
+      </div>
+
+      <hr>
+
+
+    </div>
+  </div>
+
+  <div class="to__top" title="Наверх">↑</div>
+
+  <script src="js/app.min.js"></script>
+
+</body>
+
+</html>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+░░░░░░░░░░░░░░░░░░░░░░░░▄▄█▀▀█▄░░░░░░░░░
+░░░░░░░░░░░░░░░░░░░░░░▄█▀░▄▄▄░▀█░░░░░░░░
+░░▄██▄▄▄▄░░░░░░░░░░▄▄█▀░▄█▀░██░█▄░░░░░░░
+░██████████▄▄▄▄▄▄▀▀▀▀░░░█▄▄░░█░░█░░░░░░░
+░██░░░░▀██████░░░░░░░░░░░░▀▀▀░░▄█░░░░░░░
+░▀█▄░░░░██████▄░░░░░░░░░░░░░░░░▀█░░░░░░░
+░░██▄░░▄███████░░░░░░░░░░░░░░░░░▀█░░░░░░
+░░▀███████████▀░░░░░░░░░░░░░░░░░░▀█░░░░░
+░░░███████████░░░░░░░░░░░░░░░░░░░░█░░░░░
+░░░░█████████░░░░░░░░░░░░░▄▀▀▀░░░░█░░░░░
+░░▄█████████░░░░░░░░░░░░░░░░░░▄▄░░█░░░░░
+░▄▀░░░░░▀██░░░█▀▀░░░░▄▄▄▄░░░░░▄░░░█░░░░░
+▄░░░░░░░░░▀█░░░░░░░░░███░░░░░░░▄▄▄█░░░░░
+█░░░░░░▄░▀▄░█░▀░░░░░░░░█▄░▄█░░░░░██▄░░░░
+█░░█░▀░░░░░░█░▀▀░░░█▄▄▄▀▀▀░░░░░▄█░░░█▄░░
+░░░░▀▄▄░░░▄█▀░░▀░░░░░░░░░░░░░▄██░░░▄██▄░
+░░░░░░░▀▀▀▀▀█▄▄░░░░░░░░░▄▄▄████░░░░████▄
+░░░░░░░░░░░░░▀█████████▀▀░░░░░▀█░░░▀████
+░░░░░░░░░░░░░░░░▀▀▀▀██░░░░░░░░░░█░░░░▀██
+			have nice day
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

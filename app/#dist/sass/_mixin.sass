@@ -1,0 +1,12 @@
+// Девайсы
+// @media (max-width: 991px)
+
+// Адаптивный шрифт
+@mixin font($max, $min)
+  $size: $max - $min
+  $width: $maxWidth - 320
+  font-size: calc(#{$min + px} + #{$size} * ((100vw - 320px) / #{$width}))
+  @media(min-width: $maxWidth + px)
+    font-size: $max + px
+// Пример
+// @include font(40, 24)

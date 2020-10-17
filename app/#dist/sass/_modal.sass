@@ -1,0 +1,63 @@
+body.lock
+  overflow: hidden
+
+  .wrapper
+    filter: blur(1px)
+
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  opacity: 0
+  visibility: hidden
+  overflow: auto
+  background-color: #000000
+  background-color: rgba(0, 0, 0, 0.7)
+  transition: 0.3s all 0s ease
+  z-index: 9999
+
+  &.__open
+    opacity: 1
+    visibility: visible
+
+.modal__window
+  position: relative
+  background-color: #FFFFFF
+  width: 50%
+  margin: 10% auto
+  padding: 20px
+
+.modal__close
+  position: absolute
+  top: 0
+  right: 0
+  color: rgba(0, 0, 0, 0.3)
+  height: 30px
+  width: 30px
+  font-size: 30px
+  line-height: 30px
+  text-align: center
+  cursor: pointer
+
+.modal__btn
+  background: #3a579a
+  box-shadow: 0 5px 0 #00abf0
+  color: #ffffff
+  padding: 10px
+
+.btn
+  position: relative
+  top: 0
+  border: none
+  outline: none
+  cursor: pointer
+  transition: background 0.3s ease 0s
+
+  &:hover
+    background: #324b83
+
+  &:active
+    top: 3px
+    box-shadow: 0 2px 0 #00abf0

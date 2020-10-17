@@ -1,0 +1,28 @@
+.form__item_select
+  appearance: none
+  width: 100%
+  height: 50px
+  padding: 0 20px
+  border-radius: 5px
+  font-size: 18px
+  border: 1px solid #ced4da
+  transition: all 0.3s ease 0s
+  box-sizing: border-box
+  cursor: pointer
+
+.form__item_select_wrapper
+  position: relative
+
+  &::after
+    width: 25px
+    height: 15px
+    background: #fff url('../images/select.svg') no-repeat 96% (50% / cover)
+    position: absolute
+    right: 20px
+    bottom: 35%
+    content: ''
+    display: block
+    transition: all 0.3s ease 0s
+
+  &.__active::after
+    transform: scale(-1.1)

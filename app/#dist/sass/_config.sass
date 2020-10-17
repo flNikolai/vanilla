@@ -1,0 +1,115 @@
+// Пользовательские переменные
+$accent: #019de0 // Акцентный цвет
+$fontsize: 14px // Размер шрифта
+$textcolor: #004461 // Цвет текста
+$system: -apple-system, BlinkMacSystemFont, Arial, sans-serif // Семейство системных шрифтов
+$roboto: Arial, sans-serif // Семейство шрифтов Roboto
+
+$maxWidth: 1400 // Ширина макета
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// Импортируем Библеотеку
+// @import 'node_modules/toastr/build/toastr.min';
+
+/* 
+ * Импортируем Шрифт
+ */
+@mixin font($fname, $fstyle, $fweight, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    // font-display: swap // Раскомментируйте для начального отображения системных шрифтов
+    src: local($fname), url($furl) format('woff')
+
+// @include font('Hennigar', normal, 400, '../fonts/Hennigar.woff')
+// @include font('Hennigar', italic, 400, '../fonts/Hennigar_Italic.woff')
+
+/*
+ * Обнуление стилей
+ */
+::placeholder
+  opacity: 0.75
+  color: #f1f1f1
+
+::selection
+  background-color: $accent
+  color: #fff
+
+// input, textarea
+//   outline: none
+//   &:focus:required:invalid
+//     box-shadow: 0 0 4px 2px rgba(191, 118, 118, 0.7)
+//   &:required:valid
+//     box-shadow: 0 0 4px 2px rgba(0, 128, 0, 0.7)
+
+*
+  padding: 0px
+  margin: 0px
+  border: 0px
+  box-sizing: border-box
+  outline: none
+  &:before, &:after
+    box-sizing: border-box
+
+a:not([class])
+  text-decoration: underline
+
+a
+  text-decoration: none
+  color: $accent
+  &:hover
+    text-decoration: none
+  &:focus, &:active
+    outline: none
+
+p
+  margin-bottom: 15px
+
+ul li
+	list-style: none
+
+img
+	vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+	font-weight: inherit
+	font-size: inherit
+
+/*
+ * Сайт. Основные стили
+ */
+html, body
+  height: 100%
+  width: 100%
+  font-size: 100%
+  font-size: $fontsize
+
+body
+  font-family: $roboto
+  min-width: 320px
+  position: relative
+  line-height: 1.15
+  overflow-x: hidden
+  color: #333
+  background: #f1f1f1
+  scroll-behavior: smooth
+  text-rendering: optimizeSpeed
+  &.__active
+    overflow: hidden
+
+.wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.container
+  max-width: $maxWidth + px
+  padding:
+    right: $gutter/2
+    left: $gutter/2
+  margin:
+    left: auto
+    right: auto
+
